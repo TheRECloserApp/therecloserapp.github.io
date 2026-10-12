@@ -1,0 +1,18 @@
+:root { color-scheme: light dark; --bg: #f5f5f6; --card: #fff; --text: #0b0c0e; --muted: #5e5f61; --line: #e2e2e5; --coral: #e5484d; }
+@media (prefers-color-scheme: dark) { :root { --bg: #040506; --card: #07080a; --text: #fff; --muted: #9c9c9d; --line: #1b1c1e; --coral: #ff6363; } }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", sans-serif; }
+main { max-width: 680px; margin: 0 auto; padding: 48px 20px 80px; }
+.brand { display: flex; align-items: center; gap: 10px; font-weight: 600; margin-bottom: 40px; }
+.brand svg { width: 28px; height: 28px; }
+h1 { font-size: 34px; line-height: 1.15; font-weight: 600; margin: 0 0 8px; letter-spacing: -0.01em; }
+h2 { font-size: 18px; font-weight: 600; margin: 36px 0 8px; }
+p, li { color: var(--muted); }
+p { margin: 0 0 12px; }
+ul { padding-left: 20px; margin: 0 0 12px; }
+strong { color: var(--text); font-weight: 600; }
+a { color: var(--text); }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 20px; margin: 24px 0; }
+.card p:last-child { margin-bottom: 0; }
+.meta { font: 12px/1.4 ui-monospace, "Geist Mono", Menlo, monospace; text-transform: uppercase; letter-spacing: 0.04em; color: var(--muted); }
+footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--line); font-size: 14px; color: var(--muted); }
